@@ -25,6 +25,9 @@ __status__ = "Beta"
 _ = options.translator('ddt4all_main')
 app = None
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 class Ecu_list(gui.QWidget):
     def __init__(self, ecuscan, treeview_ecu):
         super(Ecu_list, self).__init__()
